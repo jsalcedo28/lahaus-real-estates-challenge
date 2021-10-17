@@ -1,5 +1,5 @@
 <template>
-  <div class="layout-container bg-white">
+  <div class="main-layout-container bg-white">
     <Header />
     <main>
       <div class="m-auto container pt-8 md:pt-14">
@@ -14,26 +14,28 @@
         >
           Listas de favoritos
         </h1>
-        <!-- <FavoritesList /> -->
+        <!-- Favorites List Component -->
+        <MyFavoritesContainer />
       </div>
-      <!-- <Footer /> -->
     </main>
   </div>
 </template>
 
 <script>
 import Header from './Header'
+import MyFavoritesContainer from './MyFavoritesContainer'
 
 export default {
   name: 'Home',
   components: {
     Header,
+    MyFavoritesContainer,
   },
 }
 </script>
 
 <style lang="postcss" scoped>
-.layout-container {
+.main-layout-container {
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-areas:
@@ -44,15 +46,15 @@ export default {
   @apply grid grid-cols-1 h-screen;
 }
 
-.layout-container > header {
+.main-layout-container > header {
   grid-area: header;
 }
 
-.layout-container > main {
+.main-layout-container > main {
   grid-area: main;
 }
 
-.layout-container > footer {
+.main-layout-container > footer {
   grid-area: footer;
 }
 </style>

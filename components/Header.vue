@@ -27,7 +27,6 @@
         </svg>
         <div class="absolute top-0 right-2">
           <div class="bg-green-300 w-3 h-3 rounded-full"></div>
-          <!-- <NotificationBar /> -->
         </div>
       </button>
       <NuxtLink to="/" class="block">
@@ -46,7 +45,6 @@
       </NuxtLink>
     </div>
     <div class="hidden md:block">
-      <!-- <Navbar /> -->
       <nav class="md:top-0 z-20 | w-full md:w-auto | bg-green-300 md:bg-white">
         <ul
           class="
@@ -87,16 +85,13 @@
               </svg>
               <div class="absolute hidden md:block top-0.5 right-0">
                 <div class="bg-green-300 w-3 h-3 rounded-full"></div>
-                <!-- <NotificationBar /> -->
               </div>
             </NuxtLink>
           </li>
         </ul>
       </nav>
     </div>
-    <!-- <div class="md:hidden absolute w-full top-14 z-50">{isOpen && <Navbar />}</div> -->
   </header>
-  <!-- <Header /> -->
 </template>
 
 <script>
