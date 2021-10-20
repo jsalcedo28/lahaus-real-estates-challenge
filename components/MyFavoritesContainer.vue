@@ -1,6 +1,10 @@
 <template>
   <div class="favorites-list-container">
-    <span v-for="favorite in favoritesList" :key="favorite.id">
+    <span
+      v-for="favorite in favoritesList"
+      :key="favorite.id"
+      class="favorite-collection"
+    >
       <FavoriteCardCollection :favorites="favorite" :estates="estatesList" />
     </span>
     <NewFavoriteListCard />

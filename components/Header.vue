@@ -29,7 +29,7 @@
           <div class="bg-green-300 w-3 h-3 rounded-full"></div>
         </div>
       </button>
-      <NuxtLink to="/" class="block">
+      <a to="/" class="block">
         <img
           class="hidden md:block text-green-800"
           src="~/static/images/logo-web.svg"
@@ -42,7 +42,7 @@
           alt="La Haus"
           title="La Haus Logo"
         />
-      </NuxtLink>
+      </a>
     </div>
     <div class="hidden md:block">
       <nav class="md:top-0 z-20 | w-full md:w-auto | bg-green-300 md:bg-white">
@@ -63,12 +63,12 @@
             :key="menuItem.id"
             class="px-4 py-2 md:p-0 | border-b md:border-0"
           >
-            <NuxtLink :to="menuItem.url">
+            <a :href="menuItem.url" class="menu-item">
               {{ menuItem.name }}
-            </NuxtLink>
+            </a>
           </li>
           <li class="px-4 py-2 md:p-0">
-            <NuxtLink to="/" class="flex flex-row items-center relative">
+            <a href="/" class="flex flex-row items-center relative menu-item">
               <span class="pr-2">Mi Perfil</span>
               <svg
                 class="text-gray-400 ml-2 h-6 w-6 group-hover:text-gray-500"
@@ -86,7 +86,7 @@
               <div class="absolute hidden md:block top-0.5 right-0">
                 <div class="bg-green-300 w-3 h-3 rounded-full"></div>
               </div>
-            </NuxtLink>
+            </a>
           </li>
         </ul>
       </nav>

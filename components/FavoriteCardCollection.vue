@@ -26,7 +26,7 @@ export default {
     ImageCards,
   },
   props: {
-    favorites: Object,
+    favorites: Array,
     estates: Array,
   },
   data() {

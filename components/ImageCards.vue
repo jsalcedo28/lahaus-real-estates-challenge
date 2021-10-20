@@ -35,7 +35,7 @@
         text-white text-lg
       "
     >
-      <span>{{ imagesData.length - 2 > 0 ? imagesData.length - 2 : 0 }} +</span>
+      <span>+ {{ imagesData.length - 2 > 0 ? imagesData.length - 2 : 0 }}</span>
     </div>
   </div>
 </template>
