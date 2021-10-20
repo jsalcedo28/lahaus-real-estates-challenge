@@ -1,6 +1,25 @@
 @import './tailwind.scss';
-@import './font.scss';
 
-body {
-  @apply font-silka;
+@font-face {
+  font-family: 'Silka';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(~assets/fonts/silka-regular-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Silka';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(~assets/fonts/silka-medium-webfont.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Silka';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(~assets/fonts/silka-semibold-webfont.woff2) format('woff2');
 }

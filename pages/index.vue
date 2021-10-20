@@ -7,7 +7,7 @@ export default {}
 </script>
 
 <style>
-/* html {
+html {
   font-family: 'Silka', sans-serif;
-} */
+}
 </style>
